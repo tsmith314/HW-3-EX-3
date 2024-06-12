@@ -1,4 +1,4 @@
-# w3resource-SQL-Exercises
+# SQL Exercises
 
 Two of the four included SQL files contain 3 exercises each, the other 2 contain 2 exercises each. 
 Scroll down to the bottom of the documents to reach the exercise section. 
