@@ -112,6 +112,7 @@ SELECT s.name,
   INNER JOIN customer c
     ON s.city = c.city;
 
+Gets salesmens names, their corresonding customer names and the cities where both salesmen and customers are in, if the salesmen and customer share the same city.
 
 
 /* 2. Explain in plain English in one sentence what is the output of the folloiwng block of SQL commands: */
@@ -125,3 +126,5 @@ SELECT c.cust_name AS "Customer Name",
     ON c.salesman_id = s.salesman_id
   WHERE s.commission > 0.12;
 
+Gets cusomer names & city and salesmen names & commission. Yet only include customers whose salesman has commision over 0.12.
+Uses join to make single table
