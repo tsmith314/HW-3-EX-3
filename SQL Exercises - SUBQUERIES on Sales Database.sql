@@ -111,6 +111,7 @@ SELECT *
                          FROM salesman
                          WHERE name = 'Paul Adam');
 
+Gets the entire orders table (displays all columns/attributes) for salesmen who are defined to be named 'Paul Adam' (in the other table)
 
 /* 2. Explain in plain English in one sentence what is the output of the folloiwng block of SQL commands: *.'
 
@@ -120,7 +121,7 @@ SELECT *
                          FROM salesman
                          WHERE city = 'London');
 
-
+Gets the full orders table (displays all columns) where the salesmen is from London (using extermal lookup via compartmentalized select statement)
 
 
 /* 3 (bonus). Explain in plain English in one sentence what is the output of the folloiwng block of SQL commands: */
@@ -133,3 +134,5 @@ SELECT ord_date,
                              FROM orders b
                              WHERE a.ord_date = b.ord_date);
 
+Gets the order dates and total purchase amounts for those dates. Pulled from the orders table. 
+Only gets records where the total/sum purchase amount is more than the max purchase amount for that given day plus 1000.
